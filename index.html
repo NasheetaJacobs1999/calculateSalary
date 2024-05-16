@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form class="wrapper">
+        <label>Firstname:</label>
+        <input type="text" placeholder="Please enter your name" firstName>
+        <label>Surname:</label>
+        <input type="text" placeholder="Please enter your surname" lastName>
+        <label>Age:</label>
+        <input type="number" placeholder="Please enter your age" age>
+        <label>D.O.B:</label>
+        <input type="date" placeholder="mm/dd/yyyy" date>
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label><input type="radio" name="gender" value="other">Other</label>
+        <label>Greeting Type:</label>
+        <label><input type="radio" name="greeting" value="mr">Mr</label>
+        <label><input type="radio" name="greeting" value="mrs">Mrs</label>
+        <label><input type="radio" name="greeting" value="miss">Miss</label>
+        <label><input type="radio" name="greeting" value="doc">Doctor</label>
+        <label>Subjects:</label>
+        <label><input type="checkbox" name="subjects" value="HTML">HTML</label>
+        <label><input type="checkbox" name="subjects" value="CSS">CSS</label>
+        <label><input type="checkbox" name="subjects" value="JavaScript">JavaScript</label>
+        <label><input type="checkbox" name="subjects" value="Angular">Angular</label>
+        <label><input type="checkbox" name="subjects" value="VueJS">VueJS</label>
+        <label>Are you working?</label>
+        <label><input type="radio" name="answer" value="yes">Yes</label>
+        <label><input type="radio" name="answer" value="no">No</label>
+        <div id="working" style="display: none;">
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours">
+            <label for="rate">Rate:</label>
+            <input type="number" id="rate">
+        </div>
+        <button type="button" onclick="calculateSalary()">Calculate Salary</button>
+        <div id="output"></div>
+      </form>
+    <script src="./script/code.js"></script>
+</body>
+</html>
