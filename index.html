@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Salary Calculation</title>
 </head>
 <body>
     <form class="wrapper">
@@ -19,11 +20,15 @@
         <label><input type="radio" name="gender" value="male">Male</label>
         <label><input type="radio" name="gender" value="female">Female</label>
         <label><input type="radio" name="gender" value="other">Other</label>
-        <label>Greeting Type:</label>
-        <label><input type="radio" name="greeting" value="mr">Mr</label>
-        <label><input type="radio" name="greeting" value="mrs">Mrs</label>
-        <label><input type="radio" name="greeting" value="miss">Miss</label>
-        <label><input type="radio" name="greeting" value="doc">Doctor</label>
+        <div class="greetingType">
+            <label>Greeting Type:</label>
+            <select id="greetings" name="greetingType">
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+                <option value="miss">Miss</option>
+                <option value="doc">Doctor</option>
+            </select>
+        </div>
         <label>Subjects:</label>
         <label><input type="checkbox" name="subjects" value="HTML">HTML</label>
         <label><input type="checkbox" name="subjects" value="CSS">CSS</label>
@@ -39,9 +44,11 @@
             <label for="rate">Rate:</label>
             <input type="number" id="rate">
         </div>
-        <button type="button" onclick="calculateSalary()">Calculate Salary</button>
+        <button type="button">Calculate Salary</button>
         <div id="output"></div>
       </form>
+
+      
     <script src="./script/code.js"></script>
 </body>
 </html>
